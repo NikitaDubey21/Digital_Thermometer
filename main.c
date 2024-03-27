@@ -67,7 +67,7 @@ void celsius(signed int value)
 	x4=0xDF;
 	lcd_data(x3);
 	lcd_data(x2);
-  lcd_data(x1);
+        lcd_data(x1);
 	lcd_data(x4);
 	lcd_data('C');
 	farenheit(value);
@@ -80,19 +80,6 @@ void farenheit(float value1)
 	signed int g,h,y1,y2,y3,y4,y5,y6;
 	lcd_cmd(0xC7);
 	f = (value1*9/5)+32;
-	/*g=(f/10);
-	y1=f%10;
-	y1=y1+(0x30);
-	y2=g%10;
-	y2=y2+(0x30);
-	y3=g/10;
-	y3=y3+(0x30);
-	y4=0xDF;
-	lcd_data(y3);
-  lcd_data(y2);
-	lcd_data(y1);
-	lcd_data(y4);
-	lcd_data('F');*/
 	g=f*10;
 	h=g/10;
 	y1=g%10;
@@ -105,7 +92,7 @@ void farenheit(float value1)
 	y5=y3/10;
 	y5=y5+(0x30);
 	y6=0xDF;
-  lcd_data(y5);
+        lcd_data(y5);
 	lcd_data(y4);
 	lcd_data(y2);
 	lcd_data('.');
