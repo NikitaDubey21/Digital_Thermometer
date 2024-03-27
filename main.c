@@ -1,3 +1,8 @@
+// ***********************************************************
+// Project:   Digital Thermometer
+// Author:    Nikita Dubey
+// Module description: Digital Thermometer that displays temperature in both Celsius And Farenheit
+// ***********************************************************
 #include <reg51.h>
 
 sfr lcd=0xA0;    // P2=LCD Data pins
